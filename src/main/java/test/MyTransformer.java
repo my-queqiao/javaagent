@@ -4,16 +4,10 @@ import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
 
-import javassist.ClassClassPath;
-import javassist.ClassPath;
 import javassist.ClassPool;
 import javassist.CtClass;
-import javassist.CtConstructor;
-import javassist.CtField;
 import javassist.CtMethod;
-import javassist.CtNewMethod;
 import javassist.LoaderClassPath;
-import javassist.Modifier;
 
 public class MyTransformer implements ClassFileTransformer {
 	/*需要插桩的代码的包路径，只需要包路径的最前面部分即可*/
